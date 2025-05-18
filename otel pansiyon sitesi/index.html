@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Butik Otel - Ana Sayfa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+</style>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Lüks Hotel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="info.html">Hakkımızda</a></li>
+        <li class="nav-item"><a class="nav-link" href="hiz.html">Hizmetler</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="İmages/otelimiz.jpg" class="d-block w-100" alt="Görsel 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Doğayla İç İçe</h5>
+        <p>Yeşillikler içinde huzur dolu bir konaklama.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="İmages/Ekran görüntüsü 2025-05-08 154256.png" class="d-block w-100" alt="Görsel 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Konforlu Odalar</h5>
+        <p>Modern, ferah ve sıcak bir ortam.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="İmages/gahvaltı.jpg" class="d-block w-100" alt="Görsel 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lezzetli Kahvaltı</h5>
+        <p>Organik ve taze ürünlerle hazırlanmış kahvaltı.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Jumbotron / Welcome -->
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="display-5">Butik Otelimize Hoşgeldiniz</h2>
+    <p class="lead">Şehrin stresinden uzak, doğanın kalbinde huzurlu bir tatil için doğru adrestesiniz.</p>
+  </div>
+</section>
+
+<!-- Hizmet Kartları -->
+<section class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Hizmetlerimiz</h3>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Ücretsiz Wi-Fi</h5>
+            <p class="card-text">Tüm alanlarımızda yüksek hızlı internet bağlantısı.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Açık Büfe Kahvaltı</h5>
+            <p class="card-text">Organik ürünlerle hazırlanan lezzetli sabah kahvaltısı.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Doğa Yürüyüşleri</h5>
+            <p class="card-text">Rehber eşliğinde düzenlenen doğa yürüyüşleri ile enerjinizi yenileyin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Sıkça Sorulan Sorular</h2>
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Giriş ve çıkış saatleriniz nedir?
+        </button>
+      </h2>
+      <div id="collapseOne" class="collapse " data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Giriş saati 14:00, çıkış saati ise 12:00'dir. Erken giriş ve geç çıkış talepleri için lütfen önceden bizimle iletişime geçin.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Evcil hayvan kabul ediyor musunuz?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Evet, küçük ırk evcil hayvanları önceden bildirmek şartıyla kabul ediyoruz. Ek ücret uygulanabilir.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          Otelde kahvaltı hizmeti var mı?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Evet, konaklama ücretine dahil olmak üzere her sabah açık büfe kahvaltı servisimiz vardır.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+          Otopark hizmetiniz mevcut mu?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Evet, otelimize ait ücretsiz özel otopark alanı bulunmaktadır.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+          Rezervasyon iptali durumunda iade yapılıyor mu?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Rezervasyon iptalleri, giriş tarihinden 3 gün öncesine kadar ücretsiz yapılabilir. Daha sonraki iptallerde ücret iadesi yapılmaz.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+<!-- Footer -->
+<footer class="bg-secondary text-white pt-4 pb-2">
+  <div class="container text-center">
+    <p>Bizi Takip Edin</p>
+    <a href="#" class="text-white me-2">Facebook</a> |
+    <a href="#" class="text-white mx-2">Instagram</a> |
+    <a href="#" class="text-white ms-2">Twitter</a>
+    <p class="mt-3">© 2025 Butik Otel. Tüm hakları saklıdır.</p>
+    <div class=" container text-center">
+    <a href="https://github.com/XIROTHH" class="text-white me-2"style="">Yusufcan topcu</a> |
+    <a href="#" class="text-white ms-2"  >Buğra Onur Soykakilli </a>
+    </div>
+     <p>
+      Ön-Yüz yazılım geliştirme
+      
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
